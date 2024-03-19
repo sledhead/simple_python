@@ -1,5 +1,7 @@
 
 #simple python file
+print('the program is starting up')
+print('Please enter user name: ')
 user_input = input()
 
 print(user_input)
