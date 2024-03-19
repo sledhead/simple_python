@@ -10,3 +10,10 @@ last_name = input()
 print(user_input)
 print(last_name)
 
+name_dict = {}
+name_dict['first_name'] = user_input
+name_dict['last_name'] = last_name
+
+print('hello {first_name}, we are glad to have you Mr. {last_name}. '.format(**name_dict) )
+
+
