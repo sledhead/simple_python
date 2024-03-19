@@ -4,4 +4,9 @@ print('the program is starting up')
 print('Please enter user name: ')
 user_input = input()
 
+print('last name: ')
+last_name = input()
+
 print(user_input)
+print(last_name)
+
