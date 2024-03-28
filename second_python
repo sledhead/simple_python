@@ -32,10 +32,12 @@ def main(argv):
             outputfile = arg
         elif opt in ("-d", "--dfile"):
             diffile = arg
-            
+
     print ('Input file is "', inputfile)
     print ('Output file is "', outputfile)
     print ('Diff file is "', diffile)
+
+    print("the end")
 
 
 
