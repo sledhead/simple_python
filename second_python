@@ -1,9 +1,22 @@
 
-import sys
+import sys,getopt
 
-#doing some simple python dic. objects
-my_dict = {'name':'seth','age':35,'state':'mt'}
-print(my_dict)
-print('------------------')
+def main(argv):
+    #doing some simple python dic. objects
+    my_dict = {'name':'seth','age':35,'state':'mt'}
+    print(my_dict)
+    print('------------------')
 
-print( 'var passed in: ', sys.argv)
+    print( 'var passed in: ', sys.argv)
+
+    print('------------------')
+    print(argv)
+
+    print('------------------')
+
+
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
