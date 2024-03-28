@@ -1,4 +1,9 @@
 
+import sys
+
 #doing some simple python dic. objects
 my_dict = {'name':'seth','age':35,'state':'mt'}
 print(my_dict)
+print('------------------')
+
+print( 'var passed in: ', sys.argv)
