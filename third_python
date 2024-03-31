@@ -1,5 +1,7 @@
 
 #simple encryption
+#symmetric encryption
+
 from cryptography.fernet import Fernet
 
 # Generate a Fernet key
