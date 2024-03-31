@@ -48,6 +48,8 @@ print("encrypted string: ", encMessage)
 # decrypt method returns encoded byte string,
 # use decode method to convert it to string
 # public key cannot be used for decryption
-decMessage = rsa.decrypt(encMessage, privateKey).decode()
+encoded_str = rsa.decrypt(encMessage,privateKey)
+decMessage = encoded_str.decode()
 
+print("encoded_str: ",encoded_str)
 print("decrypted string: ", decMessage)
