@@ -28,7 +28,8 @@ import rsa
 # rsa.newkeys method,this method accepts 
 # key length as its parameter
 # key length should be atleast 16
-publicKey, privateKey = rsa.newkeys(512)
+#publicKey, privateKey = rsa.newkeys(512)
+publicKey, privateKey = rsa.newkeys(2048)
 
 # this is the string that we will be encrypting
 message = "having fun in montana"
@@ -37,6 +38,7 @@ message = "having fun in montana"
 # string with public key string should be 
 # encode to byte string before encryption 
 # with encode method
+print("type: ",(publicKey))
 encMessage = rsa.encrypt(message.encode(), 
 						publicKey)
 
