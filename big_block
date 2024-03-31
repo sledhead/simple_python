@@ -1,0 +1,21 @@
+#simple encryption
+#symmetric encryption
+
+from cryptography.fernet import Fernet
+
+# Generate a Fernet key
+key = Fernet.generate_key()
+# Create a Fernet object with that key
+f = Fernet(key)
+# Input string to be encrypted
+input_string = "this is so much fun sitting here. now for the full story going into the mountain cabin in the woods."
+
+# Encrypt the string
+encrypted_string = f.encrypt(input_string.encode())
+# Decrypt the encrypted string
+decrypted_string = f.decrypt(encrypted_string)
+# Print the original and decrypted strings
+
+print("Encrypt string:", encrypted_string)
+print("Original String:", input_string)
+print("Decrypted String:", decrypted_string.decode())
