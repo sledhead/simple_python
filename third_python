@@ -1,0 +1,10 @@
+
+#simple encryption
+from cryptography.fernet import Fernet
+
+# Generate a Fernet key
+key = Fernet.generate_key()
+# Create a Fernet object with that key
+f = Fernet(key)
+# Input string to be encrypted
+input_string = "Hello World!"
