@@ -31,7 +31,7 @@ import rsa
 publicKey, privateKey = rsa.newkeys(512)
 
 # this is the string that we will be encrypting
-message = "hello geeks"
+message = "having fun in montana"
 
 # rsa.encrypt method is used to encrypt 
 # string with public key string should be 
