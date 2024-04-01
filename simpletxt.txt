@@ -1,0 +1,10 @@
+width: 640
+height: 480
+fps: 5
+enabled: True
+track:person
+enabled: True
+days: 2
+mode: motion
+default: 4
+mode: active_objects
