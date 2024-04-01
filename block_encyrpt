@@ -1,2 +1,12 @@
 
 #first change file into base64 encode
+import base64
+
+with open("simpletxt.txt", "rb") as f:
+  encoded_textfile = base64.b64encode(f.read())
+
+with open("endcodedtxt.txt", "w") as wf:
+  wf.write(encoded_textfile.decode("utf-8"))
+
+
+
