@@ -15,18 +15,22 @@ from Crypto.Cipher import AES
 from Crypto.Hash import HMAC, SHA256
 from Crypto.Random import get_random_bytes
 
-data = 'secret data to transmit'.encode()
+#data = 'secret data to transmit'.encode()
+data = encoded_textfile
 
 aes_key = get_random_bytes(16)
 hmac_key = get_random_bytes(16)
+print(aes_key)
 
 cipher = AES.new(aes_key, AES.MODE_CTR)
 ciphertext = cipher.encrypt(data)
+
+print(ciphertext)
 
 hmac = HMAC.new(hmac_key, digestmod=SHA256)
 tag = hmac.update(cipher.nonce + ciphertext).digest()
 
 with open("encrypted.bin", "wb") as f:
     f.write(tag)
-    f.write(nonce)
+    f.write(cipher.nonce)
     f.write(ciphertext)
