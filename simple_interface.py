@@ -13,3 +13,4 @@ print(ret_stuff)
 plain_stuff = decrypt(ret_stuff, cool_password)
 
 print(plain_stuff)
+print(plain_stuff.decode())
