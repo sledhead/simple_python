@@ -1,3 +1,5 @@
+#install pycrptodome to use....
+#pip install pycryptodome
 
 from AES_GCM import *
 
