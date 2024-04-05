@@ -1,5 +1,6 @@
 #install pycrptodome to use....
 #pip install pycryptodome
+#https://www.askpython.com/python/examples/implementing-aes-with-padding
 
 from AES_GCM import *
 
